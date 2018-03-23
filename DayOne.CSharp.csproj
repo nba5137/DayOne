@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Player\MouseLook_V.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\UI\HideCursor.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Gun_Shoot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
