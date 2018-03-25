@@ -48,7 +48,7 @@ public class Gun_Shoot : MonoBehaviour {
         }
     }
 
-    void Display_Off()
+    public void Display_Off()
     {
         gun_line.enabled = false;
         gun_light.enabled = false;
@@ -68,6 +68,13 @@ public class Gun_Shoot : MonoBehaviour {
         // detecting if shoot anything
         if (Physics.Raycast(gun_now.transform.position, fpsCam.transform.forward, out where_hit, range))
         {
+            // trying to get HP info. 
+            Enemy_Health enemyHealth = where_hit.collider.GetComponent<Enemy_Health>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage, where_hit.point);
+            }
+
             // Set the end point for the ray.
             gun_line.SetPosition(1, where_hit.point);
         }

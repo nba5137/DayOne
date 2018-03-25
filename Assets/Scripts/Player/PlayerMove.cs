@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
 
-    public int max_health;
-    public int current_health;
     public LayerMask ground_layer;
     public SphereCollider feetCollider;
 
     Rigidbody playerRigidbody;
     float speed = 2.5f;
-    float jump_force = 4.5f;
+    float jump_force = 5f;
     Vector3 movement;
 
     void Awake () {

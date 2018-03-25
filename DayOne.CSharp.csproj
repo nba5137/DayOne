@@ -75,9 +75,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy\Basic_Attack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Basic_Move.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy_Health.cs" />
     <Compile Include="Assets\Scripts\Player\MouseLook_H.cs" />
     <Compile Include="Assets\Scripts\Player\MouseLook_V.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_Health.cs" />
     <Compile Include="Assets\Scripts\UI\HideCursor.cs" />
     <Compile Include="Assets\Scripts\Weapons\Gun_Shoot.cs" />
   </ItemGroup>
